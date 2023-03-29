@@ -1,7 +1,8 @@
 .button{
     position: absolute;
-    top: 50%
-    transform: traslate(-50%, -50%)
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .button{
@@ -18,6 +19,18 @@
     overflow: hidden;
     border-radius: 10px;
     text-transform: capitalize;
-
-
 }
+.button::after,.button::before{
+    content: '';
+    background-color: darkmagenta;
+    height: 50%;
+    width: 0;
+    position:absolute;
+    transition: 0.3s cubic-bezier(
+        .785, .135, .15, 0.86
+    );
+    -webkit-transition: 0.3s cubic-bezie (0.785, 0.135, 0.15, 0.86);
+    z-index: -1;
+}
+
+.b
